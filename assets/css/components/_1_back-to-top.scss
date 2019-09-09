@@ -14,8 +14,8 @@ Usage: codyhouse.co/license
 
 .back-to-top {
   position: fixed;
-  right: var(--space-xl);
-  bottom: var(--space-xl);
+  right: var(--space-md);
+  bottom: var(--space-md);
   padding: var(--space-xs);
   z-index: var(--zindex-fixed-element);
   border-radius: var(--radius-md);
@@ -34,13 +34,6 @@ Usage: codyhouse.co/license
   }
 }
 
-@media only screen and (min-width: 1500px) {
-  .back-to-top {
-    right: var(--space-md);
-    bottom: var(--space-md);
-  }
-}
-  
 .js .back-to-top { // if JS is enabled, hide back to top
   visibility: hidden;
   opacity: 0;
