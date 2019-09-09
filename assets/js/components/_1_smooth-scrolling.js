@@ -10,7 +10,8 @@
     SmoothScroll.prototype.initScroll = function () {
         var self = this;
 
-        var doScrollL = function (event) {
+        //detect click on link
+        this.element.addEventListener('click', function (event) {
             event.preventDefault();
             var targetId = event.target.getAttribute('href').replace('#', ''),
                 target = document.getElementById(targetId),
@@ -23,29 +24,7 @@
                 window.location.hash = targetId;
                 self.resetTarget(target, targetTabIndex);
             });
-        };
-
-        var doScroll = function (load) {
-            return function (event) {
-                event.preventDefault();
-                var tid = (load ? window.location.hash : event.target.getAttribute('href')),
-                    targetId = tid.replace('#', ''),
-                    target = document.getElementById(targetId),
-                    targetTabIndex = target.getAttribute('tabindex'),
-                    windowScrollTop = window.scrollY || document.documentElement.scrollTop;
-
-                Util.scrollTo(target.getBoundingClientRect().top + windowScrollTop, self.scrollDuration, function () {
-                    //move the focus to the target element - don't break keyboard navigation
-                    Util.moveFocus(target);
-                    window.location.hash = targetId;
-                    self.resetTarget(target, targetTabIndex);
-                });
-            };
-        }
-
-        //detect click on link
-        this.element.addEventListener('click', doScroll(false));
-        window.addEventListener('load', doScroll(true));
+        });
     };
 
     SmoothScroll.prototype.resetTarget = function (target, tabindex) {

@@ -29,7 +29,8 @@
 
         function checkBackToTop() {
             var windowTop = window.scrollY || document.documentElement.scrollTop;
-            Util.toggleClass(backTop, 'back-to-top--is-visible', windowTop >= scrollOffset);
+            var nearBottom = (window.innerHeight + window.pageYOffset) >= (document.body.offsetHeight - 100);
+            Util.toggleClass(backTop, 'back-to-top--is-visible', (windowTop >= scrollOffset && !nearBottom));
             scrolling = false;
         }
     }

@@ -17,38 +17,11 @@
   <title>Wen - Resume</title>
 </head>
 <body>
+  <progress aria-hidden="true" class="reset reading-progressbar reading-progressbar--is-hidden js-reading-progressbar"
+  max="100" value="0">
+    <div class="reading-progressbar__fallback js-reading-progressbar__fallback"></div>
+  </progress>
   <a href="#about" class="skip-link">Skip to main content</a>
-  <!-- <header class="main-header js-main-header">
-    <div class="container max-width-lg">
-      <div class="main-header__layout">
-        <div class="main-header__logo">
-          <a class="text-bg-fx text-bg-fx--scale-x text-bg-fx--underline-bold" href="#0">
-            <h1 class="main-header__logo-content">WEN</h1>
-          </a>
-        </div>
-
-        <button class="btn btn--subtle main-header__nav-trigger js-main-header__nav-trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-header-nav">
-          <i class="main-header__nav-trigger-icon" aria-hidden="true"></i>
-          <span>Menu</span>
-        </button>
-
-        <nav class="main-header__nav js-main-header__nav" id="main-header-nav" aria-labelledby="main-header-nav-label" role="navigation">
-          <div id="main-header-nav-label" class="main-header__nav-label">Main menu</div>
-          <ul class="main-header__nav-list">
-            <li class="main-header__nav-item"><a href="index.html" class="main-header__nav-link" aria-current="page">Home</a></li>
-            <li class="main-header__nav-item"><a href="features.html" class="main-header__nav-link">Features</a></li>
-            <li class="main-header__nav-item"><a href="pricing.html" class="main-header__nav-link">Pricing</a></li>
-            <li class="main-header__nav-item"><a href="blog.html" class="main-header__nav-link">Blog</a></li>
-            <li class="main-header__nav-item"><a href="blog-article.html" class="main-header__nav-link">Article</a></li>
-            <li class="main-header__nav-item"><a href="contact.html" class="main-header__nav-link">Contact</a></li>
-            <li class="main-header__nav-item main-header__nav-divider" aria-hidden="true"></li>
-            <li class="main-header__nav-item"><a href="https://github.com/CodyHouse/virgo-template" class="btn btn--primary">Download</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header> -->
-
   <header class="f-header js-f-header">
     <div class="f-header__mobile-content container max-width-lg">
       <a href="#0" class="f-header__logo">
@@ -80,21 +53,6 @@
 
         <ul class="f-header__list flex-grow flex-basis-0 justify-center@md reveal-fx reveal-fx--scale-up">
           <li class="f-header__item"><a href="#about" class="f-header__link js-smooth-scroll" data-duration="1000">About</a></li>
-          <!-- <li class="f-header__item"> aria-current="page"
-            <a href="#0" class="f-header__link">
-              <span>Solutions</span>
-              <svg class="f-header__dropdown-icon icon" aria-hidden="true" viewBox="0 0 12 12">
-                <path d="M6,9l4-5H2Z" /></svg>
-            </a>
-
-            <ul class="f-header__dropdown">
-              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item One</a></li>
-              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Two</a></li>
-              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Three</a></li>
-              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Four</a></li>
-              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Five</a></li>
-            </ul>
-          </li> -->
           <li class="f-header__item"><a href="#experience" class="f-header__link js-smooth-scroll" data-duration="1000">Experience</a></li>
           <li class="f-header__item"><a href="#education" class="f-header__link js-smooth-scroll" data-duration="1000">Education</a></li>
           <li class="f-header__item"><a href="#skills" class="f-header__link js-smooth-scroll" data-duration="1200">Skills</a></li>
@@ -152,7 +110,7 @@
     </div>
   </header>
 
-  <main id="main-content">
+  <main id="main-content" class="js-reading-content">
     <section class="hero padding-y-xxl">
       <div class="container max-width-xl">
         <div class="hero__content">
@@ -249,7 +207,7 @@
     </section> -->
 
     <section class="margin-bottom-lg" id="experience">
-      <div class="container max-width-lg">
+      <div class="container max-width-md">
         <h1 class="text-center padding-y-xs">Experience</h1>
 
         <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
@@ -562,7 +520,7 @@
     </section>
 
     <section class="margin-bottom-lg" id="projects">
-      <div class="container max-width-lg">
+      <div class="container max-width-md">
         <h1 class="text-center padding-y-xs">Projects</h1>
     
         <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
@@ -807,7 +765,7 @@
     </section> -->
 
     <section id="interests">
-      <div class="container max-width-sm">
+      <div class="container max-width-md">
         <article class="article text-component">
           <h3>Hobbies</h3>
           <p>Alongside my studies, when not behind a monitor or display, I enjoy jogging/running (long and short distances) and
@@ -900,6 +858,7 @@
       <div class="main-footer__colophon">
         <div class="main-footer__colophon-nav">
           <span>&copy; Wen Liu</span>
+          <a href="#">Back to top</a>
         </div>
   
         <div class="main-footer__socials">
@@ -919,7 +878,7 @@
       </div>
     </div>
   </footer>
-  <a class="back-to-top js-back-to-top" href="#top" data-offset="100" data-duration="300">
+  <a class="back-to-top js-back-to-top" href="#" data-offset="100" data-duration="300">
     <svg class="icon" viewBox="0 0 16 16">
       <title>Go to top of page</title>
       <g stroke-width="1" stroke="currentColor">
