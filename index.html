@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <script>
+    if('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+      document.write('<link rel="stylesheet" href="assets/css/style.css">');
+    } else {
+      document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
+    }
+  </script>
+  <noscript>
+    <link rel="stylesheet" href="assets/css/style-fallback.css">
+  </noscript>
+  <title>Wen - Resume</title>
+</head>
+<body>
+  <a href="#about" class="skip-link">Skip to main content</a>
+  <!-- <header class="main-header js-main-header">
+    <div class="container max-width-lg">
+      <div class="main-header__layout">
+        <div class="main-header__logo">
+          <a class="text-bg-fx text-bg-fx--scale-x text-bg-fx--underline-bold" href="#0">
+            <h1 class="main-header__logo-content">WEN</h1>
+          </a>
+        </div>
+
+        <button class="btn btn--subtle main-header__nav-trigger js-main-header__nav-trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-header-nav">
+          <i class="main-header__nav-trigger-icon" aria-hidden="true"></i>
+          <span>Menu</span>
+        </button>
+
+        <nav class="main-header__nav js-main-header__nav" id="main-header-nav" aria-labelledby="main-header-nav-label" role="navigation">
+          <div id="main-header-nav-label" class="main-header__nav-label">Main menu</div>
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item"><a href="index.html" class="main-header__nav-link" aria-current="page">Home</a></li>
+            <li class="main-header__nav-item"><a href="features.html" class="main-header__nav-link">Features</a></li>
+            <li class="main-header__nav-item"><a href="pricing.html" class="main-header__nav-link">Pricing</a></li>
+            <li class="main-header__nav-item"><a href="blog.html" class="main-header__nav-link">Blog</a></li>
+            <li class="main-header__nav-item"><a href="blog-article.html" class="main-header__nav-link">Article</a></li>
+            <li class="main-header__nav-item"><a href="contact.html" class="main-header__nav-link">Contact</a></li>
+            <li class="main-header__nav-item main-header__nav-divider" aria-hidden="true"></li>
+            <li class="main-header__nav-item"><a href="https://github.com/CodyHouse/virgo-template" class="btn btn--primary">Download</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header> -->
+
+  <header class="f-header js-f-header">
+    <div class="f-header__mobile-content container max-width-lg">
+      <a href="#0" class="f-header__logo">
+        <svg width="130" height="32" viewBox="0 0 130 32">
+          <title>Go to homepage</title>
+          <circle fill="var(--color-primary)" cx="16" cy="16" r="16" />
+          <rect fill="var(--color-contrast-higher)" x="41" y="11" width="89" height="10" />
+          <text fill="var(--color-primary)" x="43" y="27" class="wen-logo">WEN</text>
+        </svg>
+      </a>
+
+      <button class="reset anim-menu-btn js-anim-menu-btn f-header__nav-control" aria-label="Toggle menu">
+        <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="f-header__nav" role="navigation">
+      <div class="f-header__nav-grid justify-between@md container max-width-lg">
+        <div class="f-header__nav-logo-wrapper flex-grow flex-basis-0">
+          <a href="#0" class="f-header__logo reveal-fx reveal-fx--rotate-right">
+            <svg width="130" height="32" viewBox="0 0 130 32">
+              <title>Go to homepage</title>
+              <circle fill="var(--color-primary)" cx="16" cy="16" r="16" />
+              <rect fill="var(--color-contrast-higher)" x="41" y="11" width="89" height="10" />
+              <text fill="var(--color-primary)" x="43" y="27" class="wen-logo">WEN</text>
+            </svg>
+          </a>
+        </div>
+
+        <ul class="f-header__list flex-grow flex-basis-0 justify-center@md reveal-fx reveal-fx--scale-up">
+          <li class="f-header__item"><a href="#about" class="f-header__link js-smooth-scroll" data-duration="1000">About</a></li>
+          <!-- <li class="f-header__item"> aria-current="page"
+            <a href="#0" class="f-header__link">
+              <span>Solutions</span>
+              <svg class="f-header__dropdown-icon icon" aria-hidden="true" viewBox="0 0 12 12">
+                <path d="M6,9l4-5H2Z" /></svg>
+            </a>
+
+            <ul class="f-header__dropdown">
+              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item One</a></li>
+              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Two</a></li>
+              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Three</a></li>
+              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Four</a></li>
+              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Five</a></li>
+            </ul>
+          </li> -->
+          <li class="f-header__item"><a href="#experience" class="f-header__link js-smooth-scroll" data-duration="1000">Experience</a></li>
+          <li class="f-header__item"><a href="#education" class="f-header__link js-smooth-scroll" data-duration="1000">Education</a></li>
+          <li class="f-header__item"><a href="#skills" class="f-header__link js-smooth-scroll" data-duration="1200">Skills</a></li>
+          <li class="f-header__item"><a href="#projects" class="f-header__link js-smooth-scroll" data-duration="1400">Projects</a></li>
+          <li class="f-header__item"><a href="#interests" class="f-header__link js-smooth-scroll" data-duration="1600">Interests</a></li>
+        </ul>
+
+        <ul class="f-header__list flex-grow flex-basis-0 justify-end@md  reveal-fx reveal-fx--rotate-left">
+          <li class="f-header__item">
+            <a href="https://www.linkedin.com/in/wen-liu-a98503170/" target="_blank" class="f-header__link f-header__link--icon" aria-label="Find me on LinkedIn">
+              <svg class="icon" viewBox="0 0 48 48">
+                <g>
+                  <path
+                    d="M46,0H2C0.9,0,0,0.9,0,2v44c0,1.1,0.9,2,2,2h44c1.1,0,2-0.9,2-2V2C48,0.9,47.1,0,46,0z M14.2,40.9H7.1V18
+              	h7.1V40.9z M10.7,14.9c-2.3,0-4.1-1.8-4.1-4.1c0-2.3,1.8-4.1,4.1-4.1c2.3,0,4.1,1.8,4.1,4.1C14.8,13,13,14.9,10.7,14.9z M40.9,40.9
+              	h-7.1V29.8c0-2.7,0-6.1-3.7-6.1c-3.7,0-4.3,2.9-4.3,5.9v11.3h-7.1V18h6.8v3.1h0.1c0.9-1.8,3.3-3.7,6.7-3.7c7.2,0,8.5,4.7,8.5,10.9
+              	V40.9z">
+                  </path>
+                </g>
+              </svg>
+              <span class="margin-left-xxs">Find me on LinkedIn</span>
+            </a>
+          </li>
+          <li class="f-header__item">
+            <div class="margin-y-xxs switch">
+              <input class="switch__input" type="checkbox" id="themeSwitch">
+              <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
+              <div aria-hidden="true" class="switch__marker"></div>
+            </div>
+          </li>
+
+          <!-- <li class="f-header__item">
+            <a href="#0" class="f-header__link f-header__link--icon" aria-label="Follow us on Facebook">
+              <svg class="icon" viewBox="0 0 32 32">
+                <path
+                  d="M32,16A16,16,0,1,0,13.5,31.806V20.625H9.438V16H13.5V12.475c0-4.01,2.389-6.225,6.043-6.225a24.644,24.644,0,0,1,3.582.312V10.5H21.107A2.312,2.312,0,0,0,18.5,13v3h4.438l-.71,4.625H18.5V31.806A16,16,0,0,0,32,16Z">
+                </path>
+              </svg>
+              <span class="margin-left-xxs">Follow us on Facebook</span>
+            </a>
+          </li>
+
+          <li class="f-header__item">
+            <a href="#0" class="f-header__link f-header__link--icon" aria-label="Follow us on Youtube">
+              <svg class="icon" viewBox="0 0 32 32">
+                <path
+                  d="M31.7,9.6c0,0-0.3-2.2-1.3-3.2c-1.2-1.3-2.6-1.3-3.2-1.4C22.7,4.7,16,4.7,16,4.7h0c0,0-6.7,0-11.2,0.3 c-0.6,0.1-2,0.1-3.2,1.4c-1,1-1.3,3.2-1.3,3.2S0,12.2,0,14.8v2.4c0,2.6,0.3,5.2,0.3,5.2s0.3,2.2,1.3,3.2c1.2,1.3,2.8,1.2,3.5,1.4 C7.7,27.2,16,27.3,16,27.3s6.7,0,11.2-0.3c0.6-0.1,2-0.1,3.2-1.4c1-1,1.3-3.2,1.3-3.2s0.3-2.6,0.3-5.2v-2.4 C32,12.2,31.7,9.6,31.7,9.6z M12.7,20.2l0-9l8.6,4.5L12.7,20.2z">
+                </path>
+              </svg>
+              <span class="margin-left-xxs">Follow us on Youtube</span>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero padding-y-xxl">
+      <div class="container max-width-xl">
+        <div class="hero__content">
+
+          <section class="cd-intro">
+            <h1 class="cd-headline letters type">
+              <span class="reveal-fx reveal-fx--text-mask"><span>Hi,</span></span> <span class="reveal-fx reveal-fx--text-mask" data-reveal-fx-delay="100"><span>I'm</span></span>
+              <span class="reveal-fx reveal-fx--text-mask" data-reveal-fx-delay="200">
+                <span class="cd-words-wrapper">
+                  <b class="is-visible">Wen.</b>
+                  <b>a Web Developer</b>
+                  <b>a Computer Science student at the University of Warwick</b>
+                  <b>currently seeking an internship in any software engineering role.</b>
+                </span>
+              </span>
+            </h1>
+          </section> <!-- cd-intro -->
+
+        </div>
+      </div>
+      <a href="#about" class="scroll-down-btn js-smooth-scroll" data-duration="500">
+        <svg viewBox="0 0 24 24">
+          <g stroke-width="1.2" stroke="currentColor">
+            <title>scroll down</title>
+            <polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6 10 12 16 18 10"></polyline>
+          </g>
+        </svg>
+      </a>
+    </section>
+
+    <section data-theme="dark" class="sticky-hero sticky-hero--overlay-layer margin-bottom-lg js-sticky-hero">
+      <div class="sticky-hero__media" style="background-image:url(assets/img/about-bg.jpg)" aria-hidden="true"></div>
+    
+      <div id="about" class="sticky-hero__content">
+        <div class="container max-width-sm text-component">
+          <h3>About Me</h3>
+          <p>A passionate and conscientious Computer Science student with comprehensive programming knowledge and
+            problem-solving
+            ability especially in Web Development, currently seeking an internship in any software engineering role. A
+            responsible
+            and self-motivated individual, whose flexible and decisive attitude to engineering solutions yields streamline and
+            efficient results. Recent achievements from extracurricular roles and projects include the sole development and
+            re-implementation of ARM's internal compiler test infrastructure.
+          </p>
+          <div class="text-right">
+            <a href="https://www.linkedin.com/in/wen-liu-a98503170/" target="_blank" class="btn btn--primary btn--slide-fx btn--slide-fx-replace-label js-btn--slide-fx margin-left-auto">
+              LinkedIn
+              <svg class="icon" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true">
+                <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+                <title>Find me on Linkedin</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <a href="#experience" class="scroll-down-btn btn-high js-smooth-scroll" data-duration="500">
+          <svg viewBox="0 0 24 24">
+            <g stroke-width="1.2" stroke="currentColor">
+              <title>scroll down</title>
+              <polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                points="6 10 12 16 18 10"></polyline>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- <div class="container max-width-md margin-bottom-lg reveal-fx reveal-fx--scale-up">
+      <h4 class="margin-bottom-xxs"><span class="text-bg-fx text-bg-fx--scale-x text-bg-fx--underline-bold">About Me</span>
+      </h4>
+      
+      <div class="text-component margin-bottom-sm">
+        <p>A passionate and conscientious Computer Science student with comprehensive programming knowledge and
+          problem-solving
+          ability especially in Web Development, currently seeking an internship in any software engineering role. A
+          responsible
+          and self-motivated individual, whose flexible and decisive attitude to engineering solutions yields streamline and
+          efficient results. Recent achievements from extracurricular roles and projects include the sole development and
+          re-implementation of ARM's internal compiler test infrastructure.</p>
+      </div>
+    </div>
+
+    <section class="adv-gallery margin-bottom-lg">
+      <div class="adv-gallery__grid container max-width-adaptive-xl">
+        <div class="adv-gallery__img-wrapper reveal-fx reveal-fx--rotate-right"><img src="assets/img/warwick-university.png" alt="Sample image one"></div>
+        <div class="adv-gallery__img-wrapper reveal-fx reveal-fx--rotate-right"><img src="assets/img/warwick-university.png" alt="Sample image two"></div>
+        <div class="adv-gallery__img-wrapper reveal-fx reveal-fx--scale-up"><img src="assets/img/Arm-logo-reverse-white.svg" alt="Sample image three"></div>
+        <div class="adv-gallery__label reveal-fx reveal-fx--rotate-left">
+          <p class="text-md">Journey through my professional career</p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="margin-bottom-lg" id="experience">
+      <div class="container max-width-lg">
+        <h1 class="text-center padding-y-xs">Experience</h1>
+
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+          <div class="col-4@md">
+            <div class="margin-bottom-xxxs"><small class="color-contrast-medium">July 2019 - Present</small></div>
+            <div class="text-component flex flex-column justify-between">
+              <h4>ARM</h4>
+              <h2>Software Engineer Intern</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>Worked as part of an agile DevOps team engaging in daily stand-up, pair programming, sprint planning and
+                retrospective meetings.</li>
+              <li>Independently developed and re-implemented using python, the ARM internal compiler test infrastructure.</li>
+              <li>Working with builds and pipelines for Continuous Integration.</li>
+              <li>Used Git/Gerrit for version control and Jira for Project Management.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-left">
+          <div class="col-4@md">
+            <div class="margin-bottom-xxxs"><small class="color-contrast-medium">March 2018 - June 2019</small></div>
+            <div class="text-component flex flex-column justify-between">
+              <h4>University of Warwick Badminton Club</h4>
+              <h2>Webmaster</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>In charge of the design, development and maintenance of the club website and other technical issues involved with
+                the clubs online and electronic presence.</li>
+              <li>Completely redesigned the club website with a modern, minimalist but efficient approach.</li>
+              <li>Implemented a custom email templating system for use by the club secretary in sending club newsletter.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+          <div class="col-4@md">
+            <div class="margin-bottom-xxxs"><small class="color-contrast-medium">June 2017 - Present</small></div>
+            <div class="text-component flex flex-column justify-between">
+              <h4>WFTV (Warface Television)</h4>
+              <h2>Co-founder & Web Developer</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>Designed and developed a news and statistics website dedicated to covering the professional eSports scene in the
+                free-to-play video-game:Warface.</li>
+              <li>Worked as part of an international team to curate and deliver relevant content.</li>
+              <li>Implemented proprietary PHP CMS where admin users can manage the site data on backend dashboard.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-left">
+          <div class="col-4@md">
+            <div class="margin-bottom-xxxs"><small class="color-contrast-medium">August 2014</small></div>
+            <div class="text-component flex flex-column justify-between">
+              <h4>Lounge Hopper Limited</h4>
+              <h2>Intern</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>Data entry and data checking.</li>
+              <li>Participation in client meetings, recording client specifications and requirements.</li>
+              <li>Working with PHP on client back-end application.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- <div id="experience" class="margin-bottom-xl">
+      <h1 class="text-center padding-y-xs">Experience</h1>
+      <div class="feature-group">
+        <section class="feature padding-y-lg reveal-fx reveal-fx--rotate-right">
+          <div class="container max-width-md">
+            <div class="feature__grid grid grid-gap-lg flex items-center">
+              <div class="col-4@md">
+                <div class="feature__item">
+                  <div class="feature__label margin-bottom-xxs">July 2019 - Present</div>
+          
+                  <div class="text-component flex flex-column justify-between">
+                    <h4>ARM</h4>
+                    <h2>Software Engineer Intern</h2>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-8@md">
+                <div class="feature__item">
+                  <div class="text-component">
+                    <ul class="list list--ul">
+                      <li>Worked as part of an agile DevOps team engaging in daily stand-up, pair programming, sprint planning and
+                        retrospective meetings.</li>
+                      <li>Independently developed and re-implemented using python, the ARM internal compiler test infrastructure.</li>
+                      <li>Working with builds and pipelines for Continuous Integration.</li>
+                      <li>Used Git/Gerrit for version control and Jira for Project Management.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feature padding-y-lg reveal-fx reveal-fx--rotate-left">
+          <div class="container max-width-md">
+            <div class="feature__grid grid grid-gap-lg flex items-center">
+              <div class="col-4@md">
+                <div class="feature__item">
+                  <div class="feature__label margin-bottom-xxs">March 2018 - June 2019</div>
+          
+                  <div class="text-component flex flex-column justify-between">
+                    <h4>University of Warwick Badminton Club</h4>
+                    <h2>Webmaster</h2>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-8@md">
+                <div class="feature__item">
+                  <div class="text-component">
+                    <ul class="list list--ul">
+                      <li>In charge of the design, development and maintenance of the club website and other technical issues involved with
+                        the clubs online and electronic presence.</li>
+                      <li>Completely redesigned the club website with a modern, minimalist but efficient approach.</li>
+                      <li>Implemented a custom email templating system for use by the club secretary in sending club newsletter.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feature padding-y-lg reveal-fx reveal-fx--rotate-right">
+          <div class="container max-width-md">
+            <div class="feature__grid grid grid-gap-lg flex items-center">
+              <div class="col-4@md">
+                <div class="feature__item">
+                  <div class="feature__label margin-bottom-xxs">June 2017 - Present</div>
+          
+                  <div class="text-component flex flex-column justify-between">
+                    <h4>WFTV (Warface Television)</h4>
+                    <h2>Co-founder & Web Developer</h2>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-8@md">
+                <div class="feature__item">
+                  <div class="text-component">
+                    <ul class="list list--ul">
+                      <li>Designed and developed a news and statistics website dedicated to covering the professional eSports scene in the
+                        free-to-play video-game:Warface.</li>
+                      <li>Worked as part of an international team to curate and deliver relevant content.</li>
+                      <li>Implemented proprietary PHP CMS where admin users can manage the site data on backend dashboard.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feature padding-y-lg reveal-fx reveal-fx--rotate-left">
+          <div class="container max-width-md">
+            <div class="feature__grid grid grid-gap-lg flex items-center">
+              <div class="col-4@md">
+                <div class="feature__item">
+                  <div class="feature__label margin-bottom-xxs">August 2014 - August 2014</div>
+          
+                  <div class="text-component flex flex-column justify-between">
+                    <h4>Lounge Hopper Limited</h4>
+                    <h2>Intern</h2>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-8@md">
+                <div class="feature__item">
+                  <div class="text-component">
+                    <ul class="list list--ul">
+                      <li>Data entry and data checking.</li>
+                      <li>Participation in client meetings, recording client specifications and requirements.</li>
+                      <li>Working with PHP on client back-end application.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div> -->
+
+    <section id="education" class="margin-bottom-lg">
+      <div class="container max-width-md">
+        <h1 class="text-center padding-y-md">Education</h1>
+        <dl class="details-list-v2">
+          <div class="details-list-v2__item reveal-fx reveal-fx--translate-down" data-reveal-fx-delay="100">
+            <dd class="details-list-v2__dd flex justify-between"><span class=" badge badge--primary">Master of Engineering</span><span>October 2017 - Present</span></dd>
+            <dt class="details-list-v2__dt">University of Warwick</dt>
+            <dd class="details-list-v2__dd">
+              <p class="color-contrast-medium"><strong>Computer Science</strong></p>
+              <ul>
+                <li>First Year Grade: <strong>78.9%</strong> (First Class Classification)</li>
+                <li>Second Year Grade: <strong>72.1%</strong> (First Class Classification)</li>
+              </ul>
+              <br>
+              <p>Studying courses covering Algorithms &amp; Data Structures analysis, Computer Organisation &amp; Architecture,
+                Operating Systems, Computer Networks, Database Systems, Programming, Formal languages, Logic and verification,
+                Mathematics and Web development.</p>
+            </dd>
+          </div>
+        
+          <div class="details-list-v2__item reveal-fx reveal-fx--scale-up">
+            <dd class="details-list-v2__dd flex justify-between"><span class="badge badge--primary">A-Levels</span><span>September 2015 - July 2017</span></dd>
+            <dt class="details-list-v2__dt"><span>Shelley Sixth Form College</span></dt>
+            <dd class="details-list-v2__dd">
+              <ul>
+                <li>Computer Science - <strong>A*</strong></li>
+                <li>Further Mathematics - <strong>A</strong></li>
+                <li>Mathematics - <strong>A</strong></li>
+              </ul>
+            </dd>
+          </div>
+        
+          <div class="details-list-v2__item reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="200">
+            <dd class="details-list-v2__dd flex justify-between"><span class="badge badge--primary">GCSE</span><span>September 2010 - July 2015</span></dd>
+            <dt class="details-list-v2__dt"><span>Darton College</span></dt>
+            <dd class="details-list-v2__dd">
+              7 GCSEs A*-B including Maths, English and Computer Science
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+    </section>
+
+    <section id="skills" class="margin-bottom-lg">
+      <div class="container max-width-md">
+        <h1 class="text-center padding-y-md">Skills</h1>
+        <dl class="details-list-v2">
+          <div class="details-list-v2__item reveal-fx reveal-fx--translate-down" data-reveal-fx-delay="100">
+            <dt class="details-list-v2__dt">Programming</dt>
+            <dd class="details-list-v2__dd">
+              <div class="flex flex-wrap flex-gap-xxs">
+                <span class="badge badge--high-contrast">Python</span>
+                <span class="badge badge--high-contrast">Java</span>
+                <span class="badge badge--high-contrast">C</span>
+                <span class="badge badge--high-contrast">Angelscript</span>
+                <span class="badge badge--high-contrast">Angelscript</span>
+                <span class="badge badge--primary">PHP</span>
+                <span class="badge badge--primary">React</span>
+                <span class="badge badge--primary">HTML5</span>
+                <span class="badge badge--primary">CSS3</span>
+                <span class="badge badge--primary">Javascript</span>
+                <span class="badge badge--primary">jQuery</span>
+                <span class="badge badge--primary">SASS</span>
+                <span class="badge badge--primary">WordPress</span>
+              </div>
+            </dd>
+          </div>
+    
+          <div class="details-list-v2__item">
+            <dt class="details-list-v2__dt">Languages</dt>
+            <dd class="details-list-v2__dd">
+              <ul class="list list--ul">
+                <li class="flex items-center">English
+                  <div class="progress-bar js-progress-bar inline-flex flex-column items-center margin-x-sm" data-animation="on">
+                    <p class="sr-only" aria-live="polite" aria-atomic="true">Proficiency level is <span
+                        class="js-progress-bar__aria-value">90%</span></p>
+                  
+                    <div class="progress-bar__bg width-100%" aria-hidden="true">
+                      <div class="progress-bar__fill" style="width: 90%;"></div>
+                    </div>
+                  </div>
+                  <span class="badge badge--primary reveal-fx reveal-fx--scale-up" data-reveal-fx-delay="200">Native</span>
+                </li>
+                <li class="flex items-center">Chinese Mandarin
+                  <div class="progress-bar js-progress-bar inline-flex flex-column items-center margin-x-sm" data-animation="on">
+                    <p class="sr-only" aria-live="polite" aria-atomic="true">Proficiency level is <span
+                        class="js-progress-bar__aria-value">50%</span></p>
+                  
+                    <div class="progress-bar__bg width-100%" aria-hidden="true">
+                      <div class="progress-bar__fill" style="width: 50%;"></div>
+                    </div>
+                  </div>
+                  <span class="badge badge--accent reveal-fx reveal-fx--scale-up" data-reveal-fx-delay="200">Fluent</span>
+                </li>
+              </ul>
+            </dd>
+          </div>
+    
+          <div class="details-list-v2__item reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="200">
+            <dt class="details-list-v2__dt">IT</dt>
+            <dd class="details-list-v2__dd">
+              Experienced user of the Computer with Windows and Linux operating systems, working on the desktop, the internet and
+              application suites including Microsoft Office and Adobe Creative Cloud.
+            </dd>
+          </div>
+    
+        </dl>
+      </div>
+    </section>
+
+    <section class="margin-bottom-lg" id="projects">
+      <div class="container max-width-lg">
+        <h1 class="text-center padding-y-xs">Projects</h1>
+    
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+          <div class="col-4@md">
+            <div class="text-component flex flex-column justify-between">
+              <h4 class="color-contrast-medium">Python Programing</h4>
+              <h2>Neural Network powered job application evaluation system</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>Created a job application system using <strong>Python</strong> and <strong>Tensor-flow</strong> which evaluates potential job
+              applicants on trained criteria</li>
+              <li>Used <strong>Tensor-flow</strong> to model and train a <strong>neural network</strong> to recognise candidates with greater
+              potential</li>
+              <li>Responsible for the <strong>full-stack</strong> development of the job application web-app, using <strong>Django</strong></li>
+              <li>Designed the frontend UI Django templates using <strong>HTML, CSS and JavaScript</strong> as well as <strong>Bootstrap</strong>
+              and used Django with PostgreSQL for backend and data management</li>
+              <li>Worked as part of an agile team following the <strong>scrum</strong> methodology with scheduled sprints cycles, scrum
+              meetings and weekly sprint plans</li>
+              <li>Fully documented the project from start to finish including research, design, implementation and testing of the
+              product in an extensive report</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-left">
+          <div class="col-4@md">
+            <div class="text-component flex flex-column justify-between">
+              <h4 class="color-contrast-medium">C Programming</h4>
+              <h2>Multi-threaded network intrusion detection system</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>Created an intrusion detection system using the <strong>C language</strong> which sniffs incoming network traffic for
+              intrusions</li>
+              <li>Used understanding of <strong>OSI and TCP model</strong> to manually parse the <strong>TCP/IP stack</strong></li>
+              <li>Project utilises <strong>multiple processing threads</strong> with a pool-threaded task consumption approach</li>
+              <li>Used various <strong>data structures</strong> including a self implemented <strong>queue structure</strong> to organise incoming
+              packets for <strong>pool-threading</strong></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+          <div class="col-4@md">
+            <div class="text-component flex flex-column justify-between">
+              <h4 class="color-contrast-medium">Java Programming</h4>
+              <h2>AI Maze traversal and path finding</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>Created an <strong>AI powered</strong> maze traversal robot in <strong>Java</strong>, which finds optimal route(s)
+                to the destination in any given maze.</li>
+              <li>Work based on stated specifications and requirements whilst being completed on-time before set deadline, which
+                further strengthened my organising and effective time usage abilities.</li>
+              <li>Project researched, designed and then implemented with various testing conducted throughout.</li>
+              <li>Utilised algorithms such as <strong>Tremaux's algorithm</strong> and multiple <strong>data-structures</strong>
+                including stacks, arrays and linked-lists.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-left">
+          <div class="col-4@md">
+            <div class="text-component flex flex-column justify-between">
+              <h4 class="color-contrast-medium">Web App</h4>
+              <h2>Group expense management dynamic web application</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>Online web application allowing for groups to manage and distribute expenses.</li>
+              <li>Application planned then designed with efficient <strong>UX focus</strong> with UI done using <strong>HTML, CSS,
+                  Javascript and jQuery</strong>.</li>
+              <li>Back-end built following a <strong>MVC application</strong> structure with <strong>PHP and SQL</strong> for
+                database control. Using <strong>AJAX and JSON</strong> for seamless UX.</li>
+              <li>Application fully secured with password <strong>hashing, encryption and salting</strong> techniques, whilst care
+                taken to <strong>sanitise and filter</strong> user inputs and content output.</li>
+              <li>Project complete with quick turnaround on-time before set deadline as a result of efficient time management and
+                self-organised focused problem solving sessions.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+          <div class="col-4@md">
+            <div class="text-component flex flex-column justify-between">
+              <h4 class="color-contrast-medium">C Programming</h4>
+              <h2>AI optical path following robot</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>Built an <strong>AI-powered</strong> path following robot that tracks marked paths via an optical sensor using the
+                <strong>C programming</strong> language.</li>
+              <li>Programmed a micro-controller with an ARM processor, working with various registers to ensure efficient hardware
+                usage.</li>
+              <li>Gained expertise in <strong>software and hardware</strong> interfacing.</li>
+              <li>Project completed as part of a team, taking the <strong>leading role</strong> assigning tasks to team members as
+                well giving the majority contribution to the development of the project.</li>
+              <li>Completed a full written report detailing the completion of the project.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-left"><div class="col-4@md">
+          <div class="text-component flex flex-column justify-between">
+            <h4 class="color-contrast-medium">Web App</h4>
+            <h2>Extra-curricular activity enrolment web app</h2>
+          </div>
+        </div>
+        <div class="col-8@md">
+          <ul class="list list--ul">
+            <li>Online web application allowing students to enrol onto extra curricular 'enrichment' activities, allowing academic
+              staff to monitor and manage enrolled students.</li>
+            <li>App was analysed, researched, planned and designed before implementation and development, with testing done
+              throughout.</li>
+            <li>Frontend UI built using <strong>HTML5, CSS, JavaScript, jQuery</strong> and the <strong>Bootstrap</strong>
+              framework.</li>
+            <li>Server-side program written in <strong>PHP and MySQL</strong> following an <strong>MVC application</strong>
+              structure.</li>
+            <li>Project secured with high-standard BCrypt and industry recommended password encryption algorithms, whilst
+              user-inputs sanitised and filtered.</li>
+            <li>An extensive <strong>project appraisal</strong> was written including evaluation of project success and future
+              improvements.</li>
+          </ul>
+        </div>
+        </div>
+    
+      </div>
+    </section>
+
+    <!-- <div class="container max-width-md margin-bottom-xl">
+      <div class="grid grid-gap-md">
+        <div class="col-6@sm col-4@md">
+          <div class="prod-card">
+            <span class="prod-card__badge" role="text">New <i class="sr-only">product</i></span>
+          
+            <a href="#0" class="prod-card__img-link" aria-label="Description of the link">
+              <figure class="prod-card__img">
+                <img src="assets/img/img-04.jpg" alt="Product preview img">
+              </figure>
+            </a>
+          
+            <div class="prod-card__content text-center">
+              <a href="#0">
+                <h3>Product One</h3>
+              </a>
+          
+              <div class="margin-top-xs">
+                <span class="prod-card__price">$79</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-6@sm col-4@md">
+          <div class="prod-card">
+            <a href="#0" class="prod-card__img-link" aria-label="Description of the link">
+              <figure class="prod-card__img">
+                <img src="assets/img/img-05.jpg" alt="Product preview img">
+              </figure>
+            </a>
+          
+            <div class="prod-card__content text-center">
+              <a href="#0">
+                <h3>Product Two</h3>
+              </a>
+          
+              <div class="margin-top-xs">
+                <span class="prod-card__price">$79</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-6@sm col-4@md">
+          <div class="prod-card">
+            <a href="#0" class="prod-card__img-link" aria-label="Description of the link">
+              <figure class="prod-card__img">
+                <img src="assets/img/img-06.jpg" alt="Product preview img">
+              </figure>
+            </a>
+          
+            <div class="prod-card__content text-center">
+              <a href="#0">
+                <h3>Product Three</h3>
+              </a>
+          
+              <div class="margin-top-xs" role="text">
+                <del class="prod-card__price prod-card__price--old">$79</del> 
+                <ins class="prod-card__price prod-card__price--new">$49</ins>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section data-theme="dark" class="feature padding-y-xl margin-bottom-xl">
+      <div class="container max-width-adaptive-lg">
+        <div class="feature__grid grid grid-gap-md items-center">
+          <div class="col-6@md">
+            <div class="feature__item">
+              <div class="feature__label margin-bottom-xxs">This is a Label</div>
+      
+              <div class="text-component">
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rem neque doloribus impedit explicabo minus laborum cupiditate atque esse consectetur.</p>
+              </div>
+        
+              <div class="margin-top-sm">
+                <div class="flex flex-wrap flex-gap-sm items-center">
+                  <a href="#0" class="btn btn--light">Download</a>
+                  <a href="#0" class="color-inherit">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-6@md">
+            <div class="dev-phone dev-phone--light-top max-width-xxxxs margin-x-auto" aria-label="Add meaningful description here">
+              <div class="dev-phone__body">
+                <div class="dev-phone__media">
+                  <div class="dev-phone__notch"></div>
+                  <svg viewBox="0 0 750 1334">
+                    <rect width="750" height="1334" fill="var(--color-contrast-lower)"/>
+                    <path d="M130 850.633L436.4 544.233L620.24 850.633H130Z" fill="var(--color-contrast-medium)"/>
+                    <path d="M192.328 606.56C226.172 606.56 253.608 579.124 253.608 545.28C253.608 511.436 226.172 484 192.328 484C158.484 484 131.048 511.436 131.048 545.28C131.048 579.124 158.484 606.56 192.328 606.56Z" fill="var(--color-contrast-medium)"/>
+                  </svg>
+                  <div class="dev-phone__home-bar"></div>
+                </div>
+              </div>
+              <div class="dev-phone__shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="interests">
+      <div class="container max-width-sm">
+        <article class="article text-component">
+          <h3>Hobbies</h3>
+          <p>Alongside my studies, when not behind a monitor or display, I enjoy jogging/running (long and short distances) and
+            love playing badminton.</p>
+          <p>When stuck indoors, I enjoy playing video games, especially competitively, as well as listening to music
+            and watching movies and TV dramas. I also love making and designing websites!</p>
+          <h3>Interests</h3>
+          <p>I am fascinated by Artificial Intelligence and it's potential in the our evergrowing world of data. And since I like
+            making websites, I have developed an interest in web UX design as I love it when I encounter new and funky UX which
+            work flawlessly.</p>
+        </article>
+      </div>
+    </section>
+    
+    <!-- <div class="newsletter text-center margin-bottom-xxl">
+      <div class="container max-width-sm">
+        <h2>Join our Newsletter</h2>
+    
+        <div class="margin-top-sm margin-bottom-md">
+          <p class="newsletter__description">Get our monthly recap with the latest news, articles and resources.</p>
+        </div>
+    
+        <div class="max-width-xs margin-x-auto">
+          <form class="newsletter__form">
+            <input aria-label="Email address" class="form-control" type="email" placeholder="Your email address">
+            <button class="btn btn--primary">Subscribe</button>
+          </form>
+      
+          <p role="alert" class="newsletter__feedback newsletter__feedback--is-visible newsletter__feedback--success"><strong>Success!</strong> Please check your inbox for a confirmation email.</p>
+        </div>
+    
+        <div class="margin-top-xs">
+          <small class="newsletter__small">By subscribing you agree to our <a href="#0">privacy policy</a>.</small>
+        </div>
+      </div>
+    </div> -->
+  </main>
+
+  <footer class="main-footer padding-y-lg">
+    <div class="container max-width-lg">
+      <!-- <div class="main-footer__content">
+        <div class="main-footer__logo">
+          <a href="#0">
+            <svg width="130" height="32" viewBox="0 0 130 32"><title>Go to homepage</title><circle fill="var(--color-primary)" cx="16" cy="16" r="16"/><rect fill="var(--color-contrast-higher)" x="41" y="11" width="89" height="10"/></svg>
+          </a>
+        </div>
+        
+        <nav class="main-footer__nav">
+          <ul class="main-footer__nav-list">
+            <li class="main-footer__nav-item">
+              <h4>Product</h4>
+              <div><a href="#0">Pricing</a></div>
+              <div><a href="#0">Teams</a></div>
+              <div><a href="#0">Updates</a></div>
+              <div><a href="#0">Features</a></div>
+              <div><a href="#0">Integrations</a></div>
+              <div><a href="#0">Support</a></div>
+            </li>
+  
+            <li class="main-footer__nav-item">
+              <h4>Developers</h4>
+              <div><a href="#0">Documentation</a></div>
+              <div><a href="#0">API reference</a></div>
+              <div><a href="#0">API status</a></div>
+              <div><a href="#0">Open source</a></div>
+            </li>
+  
+            <li class="main-footer__nav-item">
+              <h4>Resources</h4>
+              <div><a href="#0">Tutorials</a></div>
+              <div><a href="#0">Docs</a></div>
+              <div><a href="#0">Community</a></div>
+              <div><a href="#0">Case studies</a></div>
+              <div><a href="#0">Help center</a></div>
+            </li>
+  
+            <li class="main-footer__nav-item">
+              <h4>About</h4>
+              <div><a href="#0">Company</a></div>
+              <div><a href="#0">Customers</a></div>
+              <div><a href="#0">Careers</a></div>
+              <div><a href="#0">Education</a></div>
+              <div><a href="#0">Our story</a></div>
+              <div><a href="#0">Press kit</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div> -->
+    
+      <div class="main-footer__colophon">
+        <div class="main-footer__colophon-nav">
+          <span>&copy; Wen Liu</span>
+        </div>
+  
+        <div class="main-footer__socials">
+          <a href="https://www.linkedin.com/in/wen-liu-a98503170/" target="_blank">
+            <svg class="icon" viewBox="0 0 48 48">
+              <title>Find me on LinkedIn</title>
+              <g>
+                <path d="M46,0H2C0.9,0,0,0.9,0,2v44c0,1.1,0.9,2,2,2h44c1.1,0,2-0.9,2-2V2C48,0.9,47.1,0,46,0z M14.2,40.9H7.1V18
+                          	h7.1V40.9z M10.7,14.9c-2.3,0-4.1-1.8-4.1-4.1c0-2.3,1.8-4.1,4.1-4.1c2.3,0,4.1,1.8,4.1,4.1C14.8,13,13,14.9,10.7,14.9z M40.9,40.9
+                          	h-7.1V29.8c0-2.7,0-6.1-3.7-6.1c-3.7,0-4.3,2.9-4.3,5.9v11.3h-7.1V18h6.8v3.1h0.1c0.9-1.8,3.3-3.7,6.7-3.7c7.2,0,8.5,4.7,8.5,10.9
+                          	V40.9z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="back-to-top js-back-to-top" href="#top" data-offset="100" data-duration="300">
+    <svg class="icon" viewBox="0 0 16 16">
+      <title>Go to top of page</title>
+      <g stroke-width="1" stroke="currentColor">
+        <polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+          points="15.5,11.5 8,4 0.5,11.5 "></polyline>
+      </g>
+    </svg>
+  </a>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

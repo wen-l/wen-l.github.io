@@ -1,0 +1,32 @@
+/* -------------------------------- 
+
+File#: _1_scroll-down-btn
+Title: Scroll Down Button
+Descr: Button to scroll to next section
+
+-------------------------------- */
+
+.scroll-down-btn {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 20px;
+    width: 44px;
+    height: 44px;
+    /* background: url(../img/arrow-bottom.svg) no-repeat center center; */
+}
+
+.scroll-down-btn.btn-high {
+    bottom: 70px;
+}
+
+@media only screen and (min-width: 768px) {
+  .scroll-down-btn.btn-high {
+    bottom: 20px;
+  }
+}

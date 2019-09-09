@@ -1,0 +1,47 @@
+/* -------------------------------- 
+
+File#: _1_badge
+Title: Badge
+Descr: A small label containing a text string
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.badge {
+  @include reset; // reset button native style
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--text-sm);
+  background-color: var(--color-contrast-low);
+  padding: var(--space-xxxxs) var(--space-xxs);
+  border-radius: var(--radius-md);
+}
+
+.badge--outlined {
+  background-color: transparent;
+  border: 1px solid var(--color-contrast-low);
+}
+
+.badge--high-contrast {
+  background-color: var(--color-contrast-higher);
+  color: var(--color-bg);
+  @include fontSmooth;
+}
+
+.badge--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  @include fontSmooth;
+}
+
+.badge--error {
+  background-color: var(--color-error);
+  color: var(--color-white);
+  @include fontSmooth;
+}
+
+.badge--success {
+  background-color: var(--color-success);
+  color: var(--color-white);
+  @include fontSmooth;
+}
