@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.getElementsByTagName("html")[0].className += " js";</script>
   <script>
-    if('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+    if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
       document.write('<link rel="stylesheet" href="assets/css/style.css">');
     } else {
       document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
@@ -16,9 +17,10 @@
   </noscript>
   <title>Wen - Resume</title>
 </head>
+
 <body>
   <progress aria-hidden="true" class="reset reading-progressbar reading-progressbar--is-hidden js-reading-progressbar"
-  max="100" value="0">
+    max="100" value="0">
     <div class="reading-progressbar__fallback js-reading-progressbar__fallback"></div>
   </progress>
   <a href="#about" class="skip-link">Skip to main content</a>
@@ -52,21 +54,27 @@
         </div>
 
         <ul class="f-header__list flex-grow flex-basis-0 justify-center@md reveal-fx reveal-fx--scale-up">
-          <li class="f-header__item"><a href="#about" class="f-header__link js-smooth-scroll" data-duration="1000">About</a></li>
-          <li class="f-header__item"><a href="#experience" class="f-header__link js-smooth-scroll" data-duration="1000">Experience</a></li>
-          <li class="f-header__item"><a href="#education" class="f-header__link js-smooth-scroll" data-duration="1000">Education</a></li>
-          <li class="f-header__item"><a href="#skills" class="f-header__link js-smooth-scroll" data-duration="1200">Skills</a></li>
-          <li class="f-header__item"><a href="#projects" class="f-header__link js-smooth-scroll" data-duration="1400">Projects</a></li>
-          <li class="f-header__item"><a href="#interests" class="f-header__link js-smooth-scroll" data-duration="1600">Interests</a></li>
+          <li class="f-header__item"><a href="#about" class="f-header__link js-smooth-scroll"
+              data-duration="1000">About</a></li>
+          <li class="f-header__item"><a href="#experience" class="f-header__link js-smooth-scroll"
+              data-duration="1000">Experience</a></li>
+          <li class="f-header__item"><a href="#education" class="f-header__link js-smooth-scroll"
+              data-duration="1000">Education</a></li>
+          <li class="f-header__item"><a href="#skills" class="f-header__link js-smooth-scroll"
+              data-duration="1200">Skills</a></li>
+          <li class="f-header__item"><a href="#projects" class="f-header__link js-smooth-scroll"
+              data-duration="1400">Projects</a></li>
+          <li class="f-header__item"><a href="#interests" class="f-header__link js-smooth-scroll"
+              data-duration="1600">Interests</a></li>
         </ul>
 
         <ul class="f-header__list flex-grow flex-basis-0 justify-end@md  reveal-fx reveal-fx--rotate-left">
           <li class="f-header__item">
-            <a href="https://www.linkedin.com/in/wen-liu-a98503170/" target="_blank" class="f-header__link f-header__link--icon" aria-label="Find me on LinkedIn">
+            <a href="https://www.linkedin.com/in/wen-liu-a98503170/" target="_blank"
+              class="f-header__link f-header__link--icon" aria-label="Find me on LinkedIn">
               <svg class="icon" viewBox="0 0 48 48">
                 <g>
-                  <path
-                    d="M46,0H2C0.9,0,0,0.9,0,2v44c0,1.1,0.9,2,2,2h44c1.1,0,2-0.9,2-2V2C48,0.9,47.1,0,46,0z M14.2,40.9H7.1V18
+                  <path d="M46,0H2C0.9,0,0,0.9,0,2v44c0,1.1,0.9,2,2,2h44c1.1,0,2-0.9,2-2V2C48,0.9,47.1,0,46,0z M14.2,40.9H7.1V18
               	h7.1V40.9z M10.7,14.9c-2.3,0-4.1-1.8-4.1-4.1c0-2.3,1.8-4.1,4.1-4.1c2.3,0,4.1,1.8,4.1,4.1C14.8,13,13,14.9,10.7,14.9z M40.9,40.9
               	h-7.1V29.8c0-2.7,0-6.1-3.7-6.1c-3.7,0-4.3,2.9-4.3,5.9v11.3h-7.1V18h6.8v3.1h0.1c0.9-1.8,3.3-3.7,6.7-3.7c7.2,0,8.5,4.7,8.5,10.9
               	V40.9z">
@@ -95,7 +103,8 @@
 
           <section class="cd-intro">
             <h1 class="cd-headline letters type">
-              <span class="reveal-fx reveal-fx--text-mask"><span>Hi,</span></span> <span class="reveal-fx reveal-fx--text-mask" data-reveal-fx-delay="100"><span>I'm</span></span>
+              <span class="reveal-fx reveal-fx--text-mask"><span>Hi,</span></span> <span
+                class="reveal-fx reveal-fx--text-mask" data-reveal-fx-delay="100"><span>I'm</span></span>
               <span class="reveal-fx reveal-fx--text-mask" data-reveal-fx-delay="200">
                 <span class="cd-words-wrapper">
                   <b class="is-visible">Wen.</b>
@@ -113,15 +122,18 @@
         <svg viewBox="0 0 24 24">
           <g stroke-width="1.2" stroke="currentColor">
             <title>scroll down</title>
-            <polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6 10 12 16 18 10"></polyline>
+            <polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-miterlimit="10" points="6 10 12 16 18 10"></polyline>
           </g>
         </svg>
       </a>
     </section>
 
     <section data-theme="dark" class="sticky-hero sticky-hero--overlay-layer margin-bottom-lg js-sticky-hero">
-      <div class="sticky-hero__media" style="background-image:url(assets/img/about-bg.jpg); background-position: left center;" aria-hidden="true"></div>
-    
+      <div class="sticky-hero__media"
+        style="background-image:url(assets/img/about-bg.jpg); background-position: left center;" aria-hidden="true">
+      </div>
+
       <div id="about" class="sticky-hero__content">
         <div class="container max-width-sm text-component">
           <h3>About Me</h3>
@@ -129,12 +141,15 @@
             problem-solving
             ability especially in Web Development, currently seeking an internship in any software engineering role. A
             responsible
-            and self-motivated individual, whose flexible and decisive attitude to engineering solutions yields streamline and
-            efficient results. Recent achievements from extracurricular roles and projects include the sole development and
+            and self-motivated individual, whose flexible and decisive attitude to engineering solutions yields
+            streamline and
+            efficient results. Recent achievements from extracurricular roles and projects include the sole development
+            and
             re-implementation of ARM's internal compiler test infrastructure.
           </p>
           <div class="text-right">
-            <a href="https://www.linkedin.com/in/wen-liu-a98503170/" target="_blank" class="btn btn--primary btn--slide-fx btn--slide-fx-replace-label js-btn--slide-fx margin-left-auto">
+            <a href="https://www.linkedin.com/in/wen-liu-a98503170/" target="_blank"
+              class="btn btn--primary btn--slide-fx btn--slide-fx-replace-label js-btn--slide-fx margin-left-auto">
               LinkedIn
               <svg class="icon" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true">
@@ -150,8 +165,8 @@
           <svg viewBox="0 0 24 24">
             <g stroke-width="1.2" stroke="currentColor">
               <title>scroll down</title>
-              <polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                points="6 10 12 16 18 10"></polyline>
+              <polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-miterlimit="10" points="6 10 12 16 18 10"></polyline>
             </g>
           </svg>
         </a>
@@ -162,7 +177,8 @@
       <div class="container max-width-md">
         <h1 class="text-center padding-y-xs">Experience</h1>
 
-        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+        <div
+          class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
           <div class="col-4@md">
             <div class="margin-bottom-xxxs"><small class="color-contrast-medium">July 2019 - Present</small></div>
             <div class="text-component flex flex-column justify-between">
@@ -172,9 +188,11 @@
           </div>
           <div class="col-8@md">
             <ul class="list list--ul">
-              <li>Worked as part of an agile DevOps team engaging in daily stand-up, pair programming, sprint planning and
+              <li>Worked as part of an agile DevOps team engaging in daily stand-up, pair programming, sprint planning
+                and
                 retrospective meetings.</li>
-              <li>Independently developed and re-implemented using python, the ARM internal compiler test infrastructure.</li>
+              <li>Independently developed and re-implemented using python, the ARM internal compiler test
+                infrastructure.</li>
               <li>Working with builds and pipelines for Continuous Integration.</li>
               <li>Used Git/Gerrit for version control and Jira for Project Management.</li>
             </ul>
@@ -191,15 +209,18 @@
           </div>
           <div class="col-8@md">
             <ul class="list list--ul">
-              <li>In charge of the design, development and maintenance of the club website and other technical issues involved with
+              <li>In charge of the design, development and maintenance of the club website and other technical issues
+                involved with
                 the clubs online and electronic presence.</li>
               <li>Completely redesigned the club website with a modern, minimalist but efficient approach.</li>
-              <li>Implemented a custom email templating system for use by the club secretary in sending club newsletter.</li>
+              <li>Implemented a custom email templating system for use by the club secretary in sending club newsletter.
+              </li>
             </ul>
           </div>
         </div>
 
-        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+        <div
+          class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
           <div class="col-4@md">
             <div class="margin-bottom-xxxs"><small class="color-contrast-medium">June 2017 - Present</small></div>
             <div class="text-component flex flex-column justify-between">
@@ -209,7 +230,8 @@
           </div>
           <div class="col-8@md">
             <ul class="list list--ul">
-              <li>Designed and developed a news and statistics website dedicated to covering the professional eSports scene in the
+              <li>Designed and developed a news and statistics website dedicated to covering the professional eSports
+                scene in the
                 free-to-play video-game:Warface.</li>
               <li>Worked as part of an international team to curate and deliver relevant content.</li>
               <li>Implemented proprietary PHP CMS where admin users can manage the site data on backend dashboard.</li>
@@ -242,7 +264,8 @@
         <h1 class="text-center padding-y-md">Education</h1>
         <dl class="details-list-v2">
           <div class="details-list-v2__item reveal-fx reveal-fx--translate-down" data-reveal-fx-delay="100">
-            <dd class="details-list-v2__dd flex justify-between"><span class=" badge badge--primary">Master of Engineering</span><span>October 2017 - Present</span></dd>
+            <dd class="details-list-v2__dd flex justify-between"><span class=" badge badge--primary">Master of
+                Engineering</span><span>October 2017 - Present</span></dd>
             <dt class="details-list-v2__dt">University of Warwick</dt>
             <dd class="details-list-v2__dd">
               <p class="color-contrast-medium"><strong>Computer Science</strong></p>
@@ -251,14 +274,17 @@
                 <li>Second Year Grade: <strong>72.1%</strong> (First Class Classification)</li>
               </ul>
               <br>
-              <p>Studying courses covering Algorithms &amp; Data Structures analysis, Computer Organisation &amp; Architecture,
-                Operating Systems, Computer Networks, Database Systems, Programming, Formal languages, Logic and verification,
+              <p>Studying courses covering Algorithms &amp; Data Structures analysis, Computer Organisation &amp;
+                Architecture,
+                Operating Systems, Computer Networks, Database Systems, Programming, Formal languages, Logic and
+                verification,
                 Mathematics and Web development.</p>
             </dd>
           </div>
-        
+
           <div class="details-list-v2__item reveal-fx reveal-fx--scale-up">
-            <dd class="details-list-v2__dd flex justify-between"><span class="badge badge--primary">A-Levels</span><span>September 2015 - July 2017</span></dd>
+            <dd class="details-list-v2__dd flex justify-between"><span
+                class="badge badge--primary">A-Levels</span><span>September 2015 - July 2017</span></dd>
             <dt class="details-list-v2__dt"><span>Shelley Sixth Form College</span></dt>
             <dd class="details-list-v2__dd">
               <ul>
@@ -268,9 +294,10 @@
               </ul>
             </dd>
           </div>
-        
+
           <div class="details-list-v2__item reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="200">
-            <dd class="details-list-v2__dd flex justify-between"><span class="badge badge--primary">GCSE</span><span>September 2010 - July 2015</span></dd>
+            <dd class="details-list-v2__dd flex justify-between"><span
+                class="badge badge--primary">GCSE</span><span>September 2010 - July 2015</span></dd>
             <dt class="details-list-v2__dt"><span>Darton College</span></dt>
             <dd class="details-list-v2__dd">
               7 GCSEs A*-B including Maths, English and Computer Science
@@ -293,7 +320,6 @@
                 <span class="badge badge--high-contrast">Java</span>
                 <span class="badge badge--high-contrast">C</span>
                 <span class="badge badge--high-contrast">Angelscript</span>
-                <span class="badge badge--high-contrast">Angelscript</span>
                 <span class="badge badge--primary">PHP</span>
                 <span class="badge badge--primary">React</span>
                 <span class="badge badge--primary">HTML5</span>
@@ -305,45 +331,50 @@
               </div>
             </dd>
           </div>
-    
+
           <div class="details-list-v2__item">
             <dt class="details-list-v2__dt">Languages</dt>
             <dd class="details-list-v2__dd">
               <ul class="list list--ul">
                 <li class="flex items-center">English
-                  <div class="progress-bar js-progress-bar inline-flex flex-column items-center margin-x-sm" data-animation="on">
+                  <div class="progress-bar js-progress-bar inline-flex flex-column items-center margin-x-sm"
+                    data-animation="on">
                     <p class="sr-only" aria-live="polite" aria-atomic="true">Proficiency level is <span
                         class="js-progress-bar__aria-value">90%</span></p>
-                  
+
                     <div class="progress-bar__bg width-100%" aria-hidden="true">
                       <div class="progress-bar__fill" style="width: 90%;"></div>
                     </div>
                   </div>
-                  <span class="badge badge--primary reveal-fx reveal-fx--scale-up" data-reveal-fx-delay="200">Native</span>
+                  <span class="badge badge--primary reveal-fx reveal-fx--scale-up"
+                    data-reveal-fx-delay="200">Native</span>
                 </li>
                 <li class="flex items-center">Chinese Mandarin
-                  <div class="progress-bar js-progress-bar inline-flex flex-column items-center margin-x-sm" data-animation="on">
+                  <div class="progress-bar js-progress-bar inline-flex flex-column items-center margin-x-sm"
+                    data-animation="on">
                     <p class="sr-only" aria-live="polite" aria-atomic="true">Proficiency level is <span
                         class="js-progress-bar__aria-value">50%</span></p>
-                  
+
                     <div class="progress-bar__bg width-100%" aria-hidden="true">
                       <div class="progress-bar__fill" style="width: 50%;"></div>
                     </div>
                   </div>
-                  <span class="badge badge--accent reveal-fx reveal-fx--scale-up" data-reveal-fx-delay="200">Fluent</span>
+                  <span class="badge badge--accent reveal-fx reveal-fx--scale-up"
+                    data-reveal-fx-delay="200">Fluent</span>
                 </li>
               </ul>
             </dd>
           </div>
-    
+
           <div class="details-list-v2__item reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="200">
             <dt class="details-list-v2__dt">IT</dt>
             <dd class="details-list-v2__dd">
-              Experienced user of the Computer with Windows and Linux operating systems, working on the desktop, the internet and
+              Experienced user of the Computer with Windows and Linux operating systems, working on the desktop, the
+              internet and
               application suites including Microsoft Office and Adobe Creative Cloud.
             </dd>
           </div>
-    
+
         </dl>
       </div>
     </section>
@@ -351,8 +382,9 @@
     <section class="margin-bottom-lg" id="projects">
       <div class="container max-width-md">
         <h1 class="text-center padding-y-xs">Projects</h1>
-    
-        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+
+        <div
+          class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
           <div class="col-4@md">
             <div class="text-component flex flex-column justify-between">
               <h4 class="color-contrast-medium">Python Programing</h4>
@@ -361,21 +393,27 @@
           </div>
           <div class="col-8@md">
             <ul class="list list--ul">
-              <li>Created a job application system using <strong>Python</strong> and <strong>Tensor-flow</strong> which evaluates potential job
-              applicants on trained criteria</li>
-              <li>Used <strong>Tensor-flow</strong> to model and train a <strong>neural network</strong> to recognise candidates with greater
-              potential</li>
-              <li>Responsible for the <strong>full-stack</strong> development of the job application web-app, using <strong>Django</strong></li>
-              <li>Designed the frontend UI Django templates using <strong>HTML, CSS and JavaScript</strong> as well as <strong>Bootstrap</strong>
-              and used Django with PostgreSQL for backend and data management</li>
-              <li>Worked as part of an agile team following the <strong>scrum</strong> methodology with scheduled sprints cycles, scrum
-              meetings and weekly sprint plans</li>
-              <li>Fully documented the project from start to finish including research, design, implementation and testing of the
-              product in an extensive report</li>
+              <li>Created a job application system using <strong>Python</strong> and <strong>Tensor-flow</strong> which
+                evaluates potential job
+                applicants on trained criteria</li>
+              <li>Used <strong>Tensor-flow</strong> to model and train a <strong>neural network</strong> to recognise
+                candidates with greater
+                potential</li>
+              <li>Responsible for the <strong>full-stack</strong> development of the job application web-app, using
+                <strong>Django</strong></li>
+              <li>Designed the frontend UI Django templates using <strong>HTML, CSS and JavaScript</strong> as well as
+                <strong>Bootstrap</strong>
+                and used Django with PostgreSQL for backend and data management</li>
+              <li>Worked as part of an agile team following the <strong>scrum</strong> methodology with scheduled
+                sprints cycles, scrum
+                meetings and weekly sprint plans</li>
+              <li>Fully documented the project from start to finish including research, design, implementation and
+                testing of the
+                product in an extensive report</li>
             </ul>
           </div>
         </div>
-    
+
         <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-left">
           <div class="col-4@md">
             <div class="text-component flex flex-column justify-between">
@@ -385,17 +423,22 @@
           </div>
           <div class="col-8@md">
             <ul class="list list--ul">
-              <li>Created an intrusion detection system using the <strong>C language</strong> which sniffs incoming network traffic for
-              intrusions</li>
-              <li>Used understanding of <strong>OSI and TCP model</strong> to manually parse the <strong>TCP/IP stack</strong></li>
-              <li>Project utilises <strong>multiple processing threads</strong> with a pool-threaded task consumption approach</li>
-              <li>Used various <strong>data structures</strong> including a self implemented <strong>queue structure</strong> to organise incoming
-              packets for <strong>pool-threading</strong></li>
+              <li>Created an intrusion detection system using the <strong>C language</strong> which sniffs incoming
+                network traffic for
+                intrusions</li>
+              <li>Used understanding of <strong>OSI and TCP model</strong> to manually parse the <strong>TCP/IP
+                  stack</strong></li>
+              <li>Project utilises <strong>multiple processing threads</strong> with a pool-threaded task consumption
+                approach</li>
+              <li>Used various <strong>data structures</strong> including a self implemented <strong>queue
+                  structure</strong> to organise incoming
+                packets for <strong>pool-threading</strong></li>
             </ul>
           </div>
         </div>
-    
-        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+
+        <div
+          class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
           <div class="col-4@md">
             <div class="text-component flex flex-column justify-between">
               <h4 class="color-contrast-medium">Java Programming</h4>
@@ -404,17 +447,20 @@
           </div>
           <div class="col-8@md">
             <ul class="list list--ul">
-              <li>Created an <strong>AI powered</strong> maze traversal robot in <strong>Java</strong>, which finds optimal route(s)
+              <li>Created an <strong>AI powered</strong> maze traversal robot in <strong>Java</strong>, which finds
+                optimal route(s)
                 to the destination in any given maze.</li>
-              <li>Work based on stated specifications and requirements whilst being completed on-time before set deadline, which
+              <li>Work based on stated specifications and requirements whilst being completed on-time before set
+                deadline, which
                 further strengthened my organising and effective time usage abilities.</li>
               <li>Project researched, designed and then implemented with various testing conducted throughout.</li>
-              <li>Utilised algorithms such as <strong>Tremaux's algorithm</strong> and multiple <strong>data-structures</strong>
+              <li>Utilised algorithms such as <strong>Tremaux's algorithm</strong> and multiple
+                <strong>data-structures</strong>
                 including stacks, arrays and linked-lists.</li>
             </ul>
           </div>
         </div>
-    
+
         <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-left">
           <div class="col-4@md">
             <div class="text-component flex flex-column justify-between">
@@ -425,19 +471,24 @@
           <div class="col-8@md">
             <ul class="list list--ul">
               <li>Online web application allowing for groups to manage and distribute expenses.</li>
-              <li>Application planned then designed with efficient <strong>UX focus</strong> with UI done using <strong>HTML, CSS,
+              <li>Application planned then designed with efficient <strong>UX focus</strong> with UI done using
+                <strong>HTML, CSS,
                   Javascript and jQuery</strong>.</li>
-              <li>Back-end built following a <strong>MVC application</strong> structure with <strong>PHP and SQL</strong> for
+              <li>Back-end built following a <strong>MVC application</strong> structure with <strong>PHP and
+                  SQL</strong> for
                 database control. Using <strong>AJAX and JSON</strong> for seamless UX.</li>
-              <li>Application fully secured with password <strong>hashing, encryption and salting</strong> techniques, whilst care
+              <li>Application fully secured with password <strong>hashing, encryption and salting</strong> techniques,
+                whilst care
                 taken to <strong>sanitise and filter</strong> user inputs and content output.</li>
-              <li>Project complete with quick turnaround on-time before set deadline as a result of efficient time management and
+              <li>Project complete with quick turnaround on-time before set deadline as a result of efficient time
+                management and
                 self-organised focused problem solving sessions.</li>
             </ul>
           </div>
         </div>
-    
-        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
+
+        <div
+          class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-right">
           <div class="col-4@md">
             <div class="text-component flex flex-column justify-between">
               <h4 class="color-contrast-medium">C Programming</h4>
@@ -446,42 +497,52 @@
           </div>
           <div class="col-8@md">
             <ul class="list list--ul">
-              <li>Built an <strong>AI-powered</strong> path following robot that tracks marked paths via an optical sensor using the
+              <li>Built an <strong>AI-powered</strong> path following robot that tracks marked paths via an optical
+                sensor using the
                 <strong>C programming</strong> language.</li>
-              <li>Programmed a micro-controller with an ARM processor, working with various registers to ensure efficient hardware
+              <li>Programmed a micro-controller with an ARM processor, working with various registers to ensure
+                efficient hardware
                 usage.</li>
               <li>Gained expertise in <strong>software and hardware</strong> interfacing.</li>
-              <li>Project completed as part of a team, taking the <strong>leading role</strong> assigning tasks to team members as
+              <li>Project completed as part of a team, taking the <strong>leading role</strong> assigning tasks to team
+                members as
                 well giving the majority contribution to the development of the project.</li>
               <li>Completed a full written report detailing the completion of the project.</li>
             </ul>
           </div>
         </div>
-    
-        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-left"><div class="col-4@md">
-          <div class="text-component flex flex-column justify-between">
-            <h4 class="color-contrast-medium">Web App</h4>
-            <h2>Extra-curricular activity enrolment web app</h2>
+
+        <div class="text-component grid grid-gap-lg flex items-center padding-y-lg reveal-fx reveal-fx--translate-left">
+          <div class="col-4@md">
+            <div class="text-component flex flex-column justify-between">
+              <h4 class="color-contrast-medium">Web App</h4>
+              <h2>Extra-curricular activity enrolment web app</h2>
+            </div>
+          </div>
+          <div class="col-8@md">
+            <ul class="list list--ul">
+              <li>Online web application allowing students to enrol onto extra curricular 'enrichment' activities,
+                allowing academic
+                staff to monitor and manage enrolled students.</li>
+              <li>App was analysed, researched, planned and designed before implementation and development, with testing
+                done
+                throughout.</li>
+              <li>Frontend UI built using <strong>HTML5, CSS, JavaScript, jQuery</strong> and the
+                <strong>Bootstrap</strong>
+                framework.</li>
+              <li>Server-side program written in <strong>PHP and MySQL</strong> following an <strong>MVC
+                  application</strong>
+                structure.</li>
+              <li>Project secured with high-standard BCrypt and industry recommended password encryption algorithms,
+                whilst
+                user-inputs sanitised and filtered.</li>
+              <li>An extensive <strong>project appraisal</strong> was written including evaluation of project success
+                and future
+                improvements.</li>
+            </ul>
           </div>
         </div>
-        <div class="col-8@md">
-          <ul class="list list--ul">
-            <li>Online web application allowing students to enrol onto extra curricular 'enrichment' activities, allowing academic
-              staff to monitor and manage enrolled students.</li>
-            <li>App was analysed, researched, planned and designed before implementation and development, with testing done
-              throughout.</li>
-            <li>Frontend UI built using <strong>HTML5, CSS, JavaScript, jQuery</strong> and the <strong>Bootstrap</strong>
-              framework.</li>
-            <li>Server-side program written in <strong>PHP and MySQL</strong> following an <strong>MVC application</strong>
-              structure.</li>
-            <li>Project secured with high-standard BCrypt and industry recommended password encryption algorithms, whilst
-              user-inputs sanitised and filtered.</li>
-            <li>An extensive <strong>project appraisal</strong> was written including evaluation of project success and future
-              improvements.</li>
-          </ul>
-        </div>
-        </div>
-    
+
       </div>
     </section>
 
@@ -489,29 +550,32 @@
       <div class="container max-width-md">
         <article class="article text-component">
           <h3>Hobbies</h3>
-          <p>Alongside my studies, when not behind a monitor or display, I enjoy jogging/running (long and short distances) and
+          <p>Alongside my studies, when not behind a monitor or display, I enjoy jogging/running (long and short
+            distances) and
             love playing badminton.</p>
           <p>When stuck indoors, I enjoy playing video games, especially competitively, as well as listening to music
             and watching movies and TV dramas. I also love making and designing websites!</p>
           <h3>Interests</h3>
-          <p>I am fascinated by Artificial Intelligence and it's potential in the our evergrowing world of data. And since I like
-            making websites, I have developed an interest in web UX design as I love it when I encounter new and funky UX which
+          <p>I am fascinated by Artificial Intelligence and it's potential in the our evergrowing world of data. And
+            since I like
+            making websites, I have developed an interest in web UX design as I love it when I encounter new and funky
+            UX which
             work flawlessly.</p>
         </article>
       </div>
     </section>
-    
+
   </main>
 
   <footer class="main-footer padding-y-lg">
     <div class="container max-width-lg">
-   
+
       <div class="main-footer__colophon">
         <div class="main-footer__colophon-nav">
           <span>&copy; Wen Liu</span>
           <a href="#">Back to top</a>
         </div>
-  
+
         <div class="main-footer__socials">
           <a href="https://www.linkedin.com/in/wen-liu-a98503170/" target="_blank">
             <svg class="icon" viewBox="0 0 48 48">
@@ -533,11 +597,12 @@
     <svg class="icon" viewBox="0 0 16 16">
       <title>Go to top of page</title>
       <g stroke-width="1" stroke="currentColor">
-        <polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-          points="15.5,11.5 8,4 0.5,11.5 "></polyline>
+        <polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-miterlimit="10" points="15.5,11.5 8,4 0.5,11.5 "></polyline>
       </g>
     </svg>
   </a>
-<script src="assets/js/scripts.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </body>
+
 </html>
